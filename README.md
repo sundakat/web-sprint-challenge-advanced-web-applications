@@ -28,9 +28,36 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain what a token is used for.
+
+It's kind of like a key. You can use it to access restricted resourses from a
+server, but only if you know the secret handshake.
+
+Token-Based Authentication works as Follows
+
+A user enters the name and password into the client (client being the browser, mobile device, etc.)
+
+The client then sends these credentials [i.e. username and passwor] to the Authorization Server.
+
+The Authorization Server authenticates the client credentials/username and password then it generates and returns an access token. This Access Token contains enough information to identify a user and also contains the token expiry time.
+
+The client application then includes the Access Token in the Authorization header of the HTTP request to access the restricted resources from the Resource Server until the token is expired.
+
 2. What steps can you take in your web apps to keep your data secure?
+
+You can create protected / private routes that require authentication to access.
+
+Include an expiration with tokens.
+
 3. Describe how web servers work.
+
+A web server processes incoming network requests over HTTP. Web servers store, process and deliver web pages to clients.
+
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+Create (POST) - Make something
+Read (GET)- Get something
+Update (PUT) - Change something
+Delete (DELETE)- Remove something
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
